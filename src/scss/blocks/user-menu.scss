@@ -1,0 +1,62 @@
+.user-menu {
+	@include flex(row, flex-end);
+
+	padding-left: 0;
+
+	list-style  : none;
+}
+
+.user-menu__item {
+	margin      : 7px;
+	margin-right: 9px;
+}
+
+.user-menu__link {
+	display: block;
+
+	padding: 4px;
+	@include size(22px, 22px);
+
+	.user-menu__icon {
+		transition: all 0.3s ease;
+	}
+
+	&:hover .user-menu__icon,
+	&:focus .user-menu__icon,
+	&:not([href]) .user-menu__icon {
+		transition-delay: .3s;
+		transform       : scale(1.15);
+	}
+}
+
+.user-menu__item--favorites {
+	transform: translate(-2px, 1px);
+}
+
+.user-menu__item--search {
+	transform: translate(2px, 2px);
+}
+
+.user-menu__item--cart {
+	position: relative;
+}
+
+.user-menu__number-purchases {
+	position     : absolute;
+	top          : -2px;
+	right        : -1px;
+
+	@include flex(row, center);
+
+	@include size(16px, 16px);
+
+	@include font($accent-font-family, 0.6em, 600, 1.44, #ffffff, #000000);
+
+	border-radius: 50%;
+
+	align-items  : center;
+}
+
+.main-nav__icon {
+	display: block;
+}
