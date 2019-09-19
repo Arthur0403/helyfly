@@ -16,7 +16,7 @@
     <div class="banner">
       <div class="banner__inner">
         <h1 class="banner__title">
-           Эксклюзивная <span class="banner__title_orange">фотосессия </span>при полете на вертолете</h1>
+           Эксклюзивная <span>фотосессия </span>при полете на вертолете</h1>
         <div class="label">
           <p class="label__cost">Стоимость:<span class="label__cost-price">1500₽</span></p>
           <div class="label__percent-icon"></div>
@@ -26,22 +26,23 @@
     </div>
     <section class="main-description">
       <div class="main-description__inner">
-        <h2 class="main-description__title">Фотосессия в вертолете</h2><iframe width="554" height="374" src="https://www.youtube.com/embed/x6tu3kCnxY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 class="main-description__title">Фотосессия в вертолете</h2>
+        <video class="main-description__video" src="https://www.youtube.com/watch?v=x6tu3kCnxY0" controls></video><iframe width="554" height="374" src="https://www.youtube.com/embed/x6tu3kCnxY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="main-description__description">Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты</p>
         <ul class="list main-description__list">
-          <li class="list-item main-description__list-item">3 часа съемки</li>
-          <li class="list-item main-description__list-item">Более 50 фотографий</li>
-          <li class="list-item main-description__list-item">Москва</li>
-          <li class="list-item main-description__list-item">Готовы ответить на любые вопросы</li>
+          <li class="main-description__list-item">3 часа съемки</li>
+          <li class="main-description__list-item">Более 50 фотографий</li>
+          <li class="main-description__list-item">Москва</li>
+          <li class="main-description__list-item">Готовы ответить на любые вопросы</li>
         </ul>
-        <div class="main-description__reviews-block"><span class="reviews-block__icon"></span>
-          <p class="main-description__reviews-text">Готовы ответить на любые вопросы</p>
-          <ul class="rate">
-            <li class="stars"></li>
-            <li class="stars"></li>
-            <li class="stars"></li>
-            <li class="stars"></li>
-            <li class="stars"></li>
+        <div class="achievements main-description__reviews-block"><span class="achievements__icon"></span>
+          <p class="achievements__reviews-text">Готовы ответить на любые вопросы</p>
+          <ul class="rate achievements__rate">
+            <li class="rate__stars"></li>
+            <li class="rate__stars"></li>
+            <li class="rate__stars"></li>
+            <li class="rate__stars"></li>
+            <li class="rate__stars"></li>
           </ul>
         </div>
       </div>
@@ -60,6 +61,128 @@
       </ul>
       <button class="gallery__show-photo">Показать все фото</button>
     </div>
+    <div class="about-me">
+      <div class="avatar about-me__avatar-block"><img class="avatar-img" src="" alt="" title="">
+        <div class="avatar__text-block">
+          <h4 class="avatar__title">Марина Иванова</h4><span class="avatar__occupation">Фотограф</span><a class="avatar__more-link">Показать больше информации о фотографе</a>
+        </div>
+      </div>
+      <section class="about-me-organization">
+        <h4 class="about-me-organization__title"></h4>
+        <p class="about-me-organization__text">Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах.</p>
+        <p class="about-me-organization__text">Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…</p>
+        <button class="show-more about-me-organization__show-more">Читать еще</button>
+      </section>
+      <section class="about-me-represent">
+        <h4 class="about-me-represent__title"></h4>
+        <p class="about-me-represent__text">Встречу вас на машине после длительного перелёта.  Качественный подбор места и локации для вашей съемки.  При необходимости всегда возможно прерваться на обед/ужин. Более 50 фотографий на выходе с обработкой и замечательные впечатления о Дубае !</p>
+        <button class="show-more about-me-represent__show-more">Читать еще</button>
+      </section>
+    </div>
+    <div class="schedule">
+      <div class="schedule__inner">
+        <h3 class="schedule__title">Доступная съемка в ближайшее время:</h3>
+      </div>
+      <div class="schedule__content">
+        <header class="schedule__content-header"><span class="schedule__date"></span>
+          <button class="schedule__calendar"></button>
+        </header>
+        <ul class="list schedule__list">
+          <li class="schedule__item">
+            <div class="schedule__item-text">
+              <p>15:00 - 18:00</p><span class="schedule__price">1500₽</span>
+              <p class="schedule__place">Осталось — 1 место</p>
+            </div>
+            <button class="schedule__item-button">Выбрать</button>
+          </li>
+          <li class="schedule__item">
+            <div class="schedule__item-text">
+              <p>19:00 - 22:00</p><span class="schedule__price">1500₽</span>
+              <p class="schedule__place">Осталось — 1 место</p>
+            </div>
+            <button class="schedule__item-button">Выбрать</button>
+          </li>
+        </ul>
+        <footer class="schedule__content-footer">
+          <div class="achievements schedule__achievements"></div><span class="achievements__icon"></span>
+          <p class="achievements__text">Готовы ответить на любые вопросы</p>
+          <ul class="rate achievements__rate">
+            <li class="rate__stars"></li>
+            <li class="rate__stars"></li>
+            <li class="rate__stars"></li>
+            <li class="rate__stars"></li>
+            <li class="rate__stars"></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10d28159ca856c2fdc4d75e5a681b9a784439566ecc2fa91e73ef507755cb677&amp;width=100%&amp;height=509&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="map__content">
+        <ul class="list map__list">
+          <li class="list-item map__list-item">
+            <h4 class="map__list-title">Где встречаемся?</h4>
+            <p class="map__list-text">Москва</p>
+          </li>
+          <li class="list-item map__list-item">
+            <h4 class="map__list-title">Время съемки</h4>
+            <p class="map__list-text">3 часа</p>
+          </li>
+          <li class="list-item map__list-item">
+            <h4 class="map__list-title">Мест осталось:</h4>
+            <p class="map__list-text">2 места</p>
+          </li>
+          <li class="list-item map__list-item">
+            <div class="avatar map__avatar-block"><img class="avatar-img" src="" alt="" title="">
+              <div class="avatar__text-block">
+                <h4 class="avatar__title">Марина Иванова</h4><span class="avatar__occupation">Фотограф</span><a class="avatar__more-link">Показать больше информации</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <article class="impressions">
+      <div class="impressions__inner">
+        <ul class="impressions__list">
+          <li class="impressions__item">
+            <div class="avatar impressions__avatar-block"><img class="avatar-img" src="" alt="" title="">
+              <div class="avatar__text-block">
+                <h4 class="avatar__title">Марина Иванова</h4><span class="avatar__occupation">Фотограф</span>
+                <ul class="rate achievements__rate">
+                  <li class="rate__stars"></li>
+                  <li class="rate__stars"></li>
+                  <li class="rate__stars"></li>
+                  <li class="rate__stars"></li>
+                  <li class="rate__stars"></li>
+                </ul><span class="impression__emotions">Супер! Я бы заказала съемку снова!</span>
+              </div>
+            </div>
+            <p class="impressions__item-feedback"></p>
+            <time class="impressions__date" datetime="2019-04-27">27 Апреля, 2019г.</time>
+          </li>
+        </ul>
+        <button class="show-more impressions__show-more">Показать Все (134)</button>
+      </div>
+    </article>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__head-block"><a class="logo footer__logo" href="#">
+            <object class="logo-svg" type="image/svg+xml" data="../img/Vector.svg"></object></a>
+          <div class="footer__social-block">
+            <ul class="list footer__list">
+              <li class="list-item"><a class="footer__social-link_vk"></a></li>
+              <li class="list-item"><a class="footer__social-link_fb"></a></li>
+              <li class="list-item"><a class="footer__social-link_instagramm"></a></li>
+            </ul>
+            <button class="footer__lang-switcher">RU</button>
+          </div>
+        </div>
+        <div class="footer__foot-block">
+          <div class="footer__payment-block"><span class="footer__payment-icon_mc"></span><span class="footer__payment-icon_visa"></span></div>
+          <div class="footer__copyright-block"><span class="footer__contacts">Тех. поддержка: 8(800)700-00-00</span><span class="footer__copyright">2018 HELYFLY. All Rights Reserved.</span></div>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
