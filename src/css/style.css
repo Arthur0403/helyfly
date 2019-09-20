@@ -351,8 +351,7 @@ body {
 .schedule__inner,
 .impressions__inner,
 .footer__inner {
-  margin: 0 auto;
-  width: 290px; }
+  padding: 0 15px; }
 
 .visually-hidden {
   position: absolute !important;
@@ -387,7 +386,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0; }
+  padding: 20px 15px; }
   .header__inner .logo-img {
     width: 84px; }
   .header__inner .header-phone {
@@ -401,11 +400,20 @@ body {
     text-align: center; }
 
 .banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 655px;
   background: url("../img/gallery/helimain_mob.jpg") no-repeat center;
   background-size: cover; }
   .banner .banner__inner .banner__title {
-    width: 264px;
+    margin-bottom: 36px;
+    margin-top: 0;
     font-size: 32px;
     font-weight: bold;
     line-height: 39px;
@@ -416,8 +424,9 @@ body {
       letter-spacing: 1.01px; }
   .banner .banner__inner .label {
     position: relative;
-    width: 200px;
-    height: 86px;
+    width: 69%;
+    height: 29vw;
+    margin-bottom: 14px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -434,10 +443,11 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #FC9B09;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px; }
+    -webkit-flex-shrink: inherit;
+        -ms-flex-negative: inherit;
+            flex-shrink: inherit;
+    background: url("../img/Rectangle6.2.svg") no-repeat center;
+    background-size: cover; }
     .banner .banner__inner .label .label__triangle {
       position: absolute;
       bottom: -10px;
@@ -450,20 +460,23 @@ body {
       border-color: #FC9B09 transparent transparent transparent;
       -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); }
-    .banner .banner__inner .label .label__text .label__cost {
-      padding: 0;
-      margin: 0;
-      font-size: 18px;
-      font-weight: normal;
-      line-height: 27px;
-      color: #FFFFFF; }
-    .banner .banner__inner .label .label__text .label__cost-price {
-      padding: 0;
-      margin: 0;
-      font-size: 30px;
-      font-weight: 800;
-      line-height: 45px;
-      color: #FFFFFF; }
+    .banner .banner__inner .label .label__text {
+      height: auto;
+      padding-bottom: 5vw; }
+      .banner .banner__inner .label .label__text .label__cost {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 27px;
+        color: #FFFFFF; }
+      .banner .banner__inner .label .label__text .label__cost-price {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 1;
+        color: #FFFFFF; }
     .banner .banner__inner .label .label__percent-icon {
       position: relative;
       width: 47px;
@@ -487,12 +500,12 @@ body {
         line-height: 45px;
         color: #FFFFFF; }
   .banner .banner__inner .banner__btn {
-    display: block;
-    width: 275px;
-    height: 68px;
+    display: inline-block;
+    padding: 24px 30px;
     border: 3px solid #FFFFFF;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 70px rgba(255, 255, 255, 0.7);
-            box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 70px rgba(255, 255, 255, 0.7);
-    border-radius: 7px; }
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center; }

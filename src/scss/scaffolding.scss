@@ -37,8 +37,8 @@ body {
 .schedule__inner,
 .impressions__inner,
 .footer__inner {
-	margin : 0 auto;
-	width  : $mobile-unit;
+	padding: 0 15px;
+
 }
 
 .visually-hidden {

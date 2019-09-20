@@ -1,7 +1,7 @@
 .header__inner {
     @include flex(row, space-between);
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 15px;
     
     .logo-img {
         width: 84px;
