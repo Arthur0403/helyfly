@@ -1,22 +1,23 @@
 // sizes and indents
-$main-unit: 1170px;
+$mobile-unit: 290px;
+$desktop-unit: 1125px;
 
 // media
-$desktop: 1220px;
-$tablet : 768px;
+$mobile : 320px;
 
 // fonts
-$main-font-family   : "Segoe UI", "Arial", sans-serif;
-$main-font-size     : 15px;
+$main-font-family   : "Montserrat", "Arial", sans-serif;
+$main-font-size     : 14px;
 $main-line-height   : 1;
 
-$accent-font-family : "Poppins", "Arial", sans-serif;
-$logo-font-family   : "Baskerville Old Face", serif;
-
-
 // color
-$main-text-color        : #000000;
-
+$main-text-color        : #37373F;
+$button-text-collor		: #5286EC;
+$accent-color			: #FC9B09;
+$white					: #FFFFFF;
+$border-grey			: #C7C7C7;
+$green					: #6AAD4A;
+$footer-bottom			: #FAF9F8;
 
 //mixins
 @mixin flex($fx-direction, $fx-justify, $fx-display: flex) {
@@ -25,13 +26,11 @@ $main-text-color        : #000000;
 	justify-content: $fx-justify;
 }
 
-@mixin font($f-family, $f-size, $f-weight, $f-height, $f-color, $bg-color) {
-	font-family: $f-family;
+@mixin font($f-size, $f-weight, $f-height, $f-color) {
 	font-size  : $f-size;
 	font-weight: $f-weight;
 	line-height: $f-height;
 	color      : $f-color;
-	background : $bg-color;
 }
 
 @mixin reset-indent {

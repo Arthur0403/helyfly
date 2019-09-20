@@ -1,0 +1,87 @@
+.banner {
+    height: 655px;
+    background: url("../img/gallery/helimain_mob.jpg") no-repeat center;
+    background-size: cover;
+
+    .banner__inner {
+        // padding-top: 142px;
+
+        .banner__title {
+            width: 264px;
+            @include font(32px, bold, 39px, $white);
+            letter-spacing: 1.01px;
+
+            span {
+                color: $accent-color;
+                letter-spacing: 1.01px;
+            }
+        }
+
+        .label {
+            position: relative;
+            width: 200px;
+            height: 86px;
+            @include flex(row, space-around);
+            align-items: center;
+            background: $accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+
+            .label__triangle {
+                position: absolute;
+                bottom: -10px;
+                right: 30%;
+                width: 0;
+                height: 0;
+                border-radius: 10px;
+                border-style: solid;
+                border-width: 15px 15px 0 15px;
+                border-color: $accent-color transparent transparent transparent;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .label__text {
+                .label__cost {
+                    @include reset-indent;
+                    @include font(18px, normal, 27px, $white);
+                }
+
+                .label__cost-price {
+                    @include reset-indent;
+                    @include font(30px, 800, 45px, $white);
+                }
+            }
+
+            .label__percent-icon {
+                position: relative;
+                width: 47px;
+                height: 47px;
+                box-sizing: border-box;
+                border: 1px solid #FFFFFF;
+                border-radius: 100%;
+
+                &::before {
+                    content: "%";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    box-sizing: border-box;
+                    transform: translate(-50%, -50%);
+                    @include font(30px, 800, 45px, $white);
+                }
+            }
+
+        }
+
+        .banner__btn {
+            display: block;
+            width: 275px;
+            height: 68px;
+
+            border: 3px solid $white;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 70px rgba(255, 255, 255, 0.7);
+            border-radius: 7px;
+        }
+    }
+}

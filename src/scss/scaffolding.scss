@@ -1,8 +1,21 @@
 body {
 	@include reset-indent;
 
-	@include font($main-font-family, $main-font-size, normal, $main-line-height, $main-text-color, $main-color-background);
+	@include font($main-font-size, normal, $main-line-height, $main-text-color);
+	font-family: $main-font-family;
 }
+
+/* Не забыть удалить */
+
+.gallerru__image {
+	width: 100%;
+}
+
+.youtube-video {
+	display: none;
+}
+
+/* Не забыть удалить конец */
 
 *:focus {
 	outline       : none;
@@ -16,22 +29,16 @@ body {
 	box-shadow: none;
 }
 
-.main-wrapper {
+.header__inner,
+.banner__inner,
+.main-description__inner,
+.gallery__inner,
+.about-me__inner,
+.schedule__inner,
+.impressions__inner,
+.footer__inner {
 	margin : 0 auto;
-	width  : $main-unit;
-}
-
-.logo__link {
-	display         : block;
-
-	padding         : 8.5px 25px;
-
-	@include font(Baskerville Old Face, 2.267em, 500, 1, #000000, transparent);
-
-	transform       : scaleX(1.04);
-	text-decoration : none;
-	letter-spacing  : 0.7px;
-	text-transform  : uppercase;
+	width  : $mobile-unit;
 }
 
 .visually-hidden {
@@ -48,110 +55,40 @@ body {
 	border   : 0 !important;
 }
 
-.accessible {
-	position        : absolute;
-	top             : auto;
-	z-index         : z('accessible');
-
-	overflow        : hidden;
-
-	@include size(1px, 1px);
-
-	color           : $main-text-color;
-
-	text-decoration : none;
-}
-
-.accessible:focus {
-	top        : 15px;
-	left       : 0;
-	z-index: 2;
-
-	overflow   : auto;
-
-	padding    : 5px;
-	@include size (auto, auto);
-
-	text-align : center;
-}
-
-.logo__link span {
-	color: #ff0000;
-}
-
-.logo {
-	position   : relative;
-
-	&::after {
-		@include pseudo;
-		bottom        : 14.5px;
-		left          : 111px;
-
-		@include size (8px, 8px);
-
-		border-radius : 50%;
-		background    : #ff0000;
-	}
-
-	span {
-		margin-left: -1px;
+.list {
+	list-style-type: none;
+	.list-item {
+		padding-left: 0;
 	}
 }
 
-.form-button {
-	position        : relative;
+// .form-button {
+// 	position        : relative;
 
-	display         : block;
+// 	display         : block;
 
-	padding         : 18px 0;
+// 	padding         : 18px 0;
 
-	@include font($main-font-family, 1.067em, 500, $main-line-height, $main-text-color, $main-color-background);
+// 	@include font($main-font-family, 1.067em, 500, $main-line-height, $main-text-color, $main-color-background);
 
-	transition      : all 300ms ease;
-	text-decoration : none;
+// 	transition      : all 300ms ease;
+// 	text-decoration : none;
 
-	border          : 1px solid $main-text-color;
-	border-radius   : 5px;
+// 	border          : 1px solid $main-text-color;
+// 	border-radius   : 5px;
 
-	&:hover {
-		color          : $main-color-background;
+// 	&:hover {
+// 		color          : $main-color-background;
 
-		letter-spacing : 1.1px;
+// 		letter-spacing : 1.1px;
 
-		background     : $main-text-color;
-		box-shadow     : $button-shadow;
-	}
+// 		background     : $main-text-color;
+// 		box-shadow     : $button-shadow;
+// 	}
 
-	&:active {
-		letter-spacing: 0;
+// 	&:active {
+// 		letter-spacing: 0;
 
-		box-shadow    : none;
-	}
-}
-
-.modal-wrapper {
-	position   : fixed;
-	top        : 0;
-	right      : 0;
-	bottom     : 0;
-	left       : 0;
-
-	display    : none;
-
-	background : hsla(0, 0%, 0%, .75);
-	z-index    : z('modal-wrapper');
-}
-
-.modal--open {
-	overflow: hidden;
-}
-
-.main-slider {
-	@include size(100%, 768px);
-
-	background: $main-slider-background;
-}
-
-.modal-login {
-	display: none;
-}
+// 		box-shadow    : none;
+// 	}
+// }

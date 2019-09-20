@@ -8,9 +8,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__inner"><a class="logo header__logo" href="#">
-          <object class="logo-svg" type="image/svg+xml" data="../img/Vector.svg"></object></a>
-        <p class="header-phone">Телефон:<a class="header-phone__num" href="tel:88001231212">8(800)-123-12-12</a></p>
+      <div class="header__inner"><a class="logo header__logo" href="#"><img class="logo-img" src="../img/Vector.svg"></a>
+        <s class="header-phone">Телефон:<a class="header-phone__num" href="tel:88001231212">8(800)-123-12-12</a></s><a class="location">Москва</a>
+        <div class="header__auth-block"><img class="header-icon" src="../img/gallery/header-icon.svg"></div>
       </div>
     </header>
     <div class="banner">
@@ -18,16 +18,19 @@
         <h1 class="banner__title">
            Эксклюзивная <span>фотосессия </span>при полете на вертолете</h1>
         <div class="label">
-          <p class="label__cost">Стоимость:<span class="label__cost-price">1500₽</span></p>
+          <div class="label__text">
+            <p class="label__cost">Стоимость:</p>
+            <p class="label__cost-price">1500₽</p>
+          </div>
           <div class="label__percent-icon"></div>
-        </div>
-        <button class="banner__btn">Забронировать место</button>
+          <div class="label__triangle"></div>
+        </div><a class="banner__btn"> <span>Забронировать место</span></a>
       </div>
     </div>
     <section class="main-description">
       <div class="main-description__inner">
         <h2 class="main-description__title">Фотосессия в вертолете</h2>
-        <video class="main-description__video" src="https://www.youtube.com/watch?v=x6tu3kCnxY0" controls></video><iframe width="554" height="374" src="https://www.youtube.com/embed/x6tu3kCnxY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="youtube-video" width="554" height="374" src="https://www.youtube.com/embed/x6tu3kCnxY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="main-description__description">Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты</p>
         <ul class="list main-description__list">
           <li class="main-description__list-item">3 часа съемки</li>

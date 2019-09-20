@@ -62,7 +62,7 @@ gulp.task('serv', function() {
 });
 
 gulp.task('pug', function () {
-	return gulp.src(['src/pug/**/*.pug', '!src/pug/includes/*.pug'])
+	return gulp.src(['src/pug/**/*.pug', '!src/pug/includes/**/*.pug'])
 		.pipe(pug({
 			pretty:true
 		}))
